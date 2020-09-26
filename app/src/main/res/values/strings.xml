@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">Gateway</string>
+    <string name="action_settings">Setting</string>
+    <string name="rec_setting">RSetting</string>
+    <string name="sen_setting">SSetting</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="baudRate">Baud rate</string>
+    <string name="baud_rate_str">Baud rate</string>
+    <string name="stop_bit">StopBits</string>
+    <string name="data_bit">DataBits</string>
+    <string name="parity_str">Parity</string>
+    <string name="flow">Flow</string>
+    <string name="config">Config</string>
+    <string name="read_bytes">Read Bytes</string>
+    <string name="write_bytes">Write Bytes</string>
+    <string name="write">Write</string>
+    <string name="clear">Clear</string>
+    <string name="open">Open</string>
+    <string name="hint">hex input</string>
+    <string name="dialog_title">hello Dialog</string>
+    <string name="ok">OK</string>
+    <string name="sagreement">Agreement</string>
+    <string name="sip">Ip</string>
+    <string name="sport">Port</string>
+    <string name="scolor">Color</string>
+    <string name="sshape">Shape</string>
+    <string name="stype">Type</string>
+    <string name="sbit">Bit</string>
+    <string name="smin">ThresholdMin</string>
+    <string name="smax">ThresholdMax</string>
+    <string name="sdatacount">DataCount</string>
+    <string name="sname">Name</string>
+
+
+    <string-array name="baud_rate">
+        <item>300</item>
+        <item>600</item>
+        <item>1200</item>
+        <item>2400</item>
+        <item>4800</item>
+        <item>9600</item>
+        <item>14400</item>
+        <item>19200</item>
+        <item>28800</item>
+        <item>38400</item>
+        <item>57600</item>
+        <item>76800</item>
+        <item>115200</item>
+    </string-array>
+
+    <string-array name="stop_bits">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="data_bits">
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+
+    <string-array name="parity">
+        <item>Odd</item>
+        <item>Even</item>
+        <item>Space</item>
+        <item>None</item>
+    </string-array>
+</resources>

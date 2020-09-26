@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.processingdisplay">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.things.permission.USE_PERIPHERAL_IO" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SendXmlActivity"
+            android:label="发送设置"
+            android:theme="@style/Theme.AppCompat.Dialog"/>
+        <activity
+            android:name=".ReceiveXmlActivity"
+            android:label="接收设置"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+
+        <uses-library android:name="com.google.android.things" />
+
+        <activity android:name=".DoDrawActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".TestService"
+            android:enabled="true"
+            android:exported="true" />
+        <provider
+            android:name="cn.bmob.v3.util.BmobContentProvider"
+            android:authorities="ProcessingDisplay.BmobContentProvider">
+        </provider>
+    </application>
+
+</manifest>
